@@ -12,9 +12,11 @@ plot_package.ylabel("Temperature")      # Set label for y-axis
 plot_package.plot(date_series, temperature_series)  # Plot line graph between date and temperature.
 plot_package.show()     # Display the line plot chart
 
-# For single-line charts, label attribute is not required.
 # For multi-line charts, Setting label for line will be useful only for applying legend in line plot chart.
 plot_package.plot(date_series, temperature_series, label="temperature")
+plot_package.legend()   # Adds legend to line plot chart
+plot_package.grid()     # adds grid lines as canvas in the background.
+plot_package.show()
 
 plot_package.plot(date_series, temperature_series, alpha=0.3)  # Controls the transparency / brightness of the line / markers in graph.
 

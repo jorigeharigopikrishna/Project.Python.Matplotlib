@@ -17,10 +17,9 @@ plot_package.plot(date_series, temperature_series, label="Temperature")  # Plot 
 plot_package.plot(date_series, windspeed_series, label="Windspeed")  # Plot line graph between date and windspeed.
 plot_package.plot(date_series, aqi_series, label="AQI")  # Plot line graph between date and AQI.
 plot_package.legend()   # add legend only in case of multi-lines in single chart
+plot_package.grid()     # adds grid lines as canvas in the background.
+plot_package.show()     # Display line plot chart.
 
 plot_package.legend(loc="upper right")  # sets legend location to be upper right
 
 plot_package.legend(fontsize="large")  # sets fontsize of the labels in the legend to be large
-
-plot_package.grid()     # adds grid lines as canvas in the background.
-plot_package.show()     # Display line plot chart.
